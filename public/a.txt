@@ -1,0 +1,50 @@
+"use client";
+
+import { ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { ReactNode } from "react";
+
+interface AnimatedButtonProps {
+  children: ReactNode;
+  className?: string;
+  onClick?: () => void;
+}
+
+export function AnimatedButton({
+  children,
+  className,
+  onClick,
+}: AnimatedButtonProps) {
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        "group relative inline-flex items-center overflow-hidden rounded-lg p-0.5 text-white font-semibold transition-all duration-700 ease-in-out",
+        "bg-gradient-to-r from-[#9988fd] to-[#ffb3b3]",
+        className
+      )}
+    >
+      {/* Expanding square background that grows from right to left */}
+      <span
+        className="absolute left-0.5 right-0.5 top-0.5 bottom-0.5 origin-right scale-x-0 rounded-md bg-white/30 opacity-0 transition-all duration-700 ease-in-out group-hover:scale-x-100 group-hover:opacity-100"
+        aria-hidden="true"
+      />
+
+      {/* Content */}
+      <span className="relative z-10 px-4 transition-transform duration-700 ease-in-out group-hover:-translate-x-1">
+        {children}
+      </span>
+
+      {/* Chevron icon container */}
+      <span className="relative z-50 flex h-8 w-12 items-center justify-center rounded-md bg-white/30 transition-colors duration-700 ease-in-out group-hover:bg-transparent">
+        <ChevronRight className="h-5 w-5 transition-transform duration-700 ease-in-out group-hover:translate-x-0.5" />
+      </span>
+    </button>
+  );
+}
+
+
+
+        <Button variant="ghost" className="border rounded-full">
+          Start for free
+        </Button>
