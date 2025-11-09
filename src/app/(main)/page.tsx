@@ -13,6 +13,13 @@ import Hero from "./components/hero";
 import Footer from "./components/footer";
 import Plans from "./components/plans";
 import TrustedByInnovators from "./components/trusted-by-innovators";
+import AutomatedFlow from "./components/automated-flow";
+import InsightGuide from "./components/insight-guide";
+import StayAheadOfCompetition from "./components/stay-ahead-of-comp";
+import ForDevelopers from "./components/for-developers";
+import HowItWorks from "./components/how-it-works";
+import { ReviewCarousel } from "@/components/landing/review-carousel";
+import SeamlessIntegration from "./components/seamless-integrations";
 
 function LandingPage() {
   return (
@@ -20,7 +27,15 @@ function LandingPage() {
       <NavigationBar />
 
       <Hero />
-
+      <CompanyMarquee />
+      <AutomatedFlow />
+      {/* <InsightGuide /> */}
+      <SeamlessIntegration />
+      <StayAheadOfCompetition />
+      <HowItWorks />
+      <ForDevelopers />
+      <ReviewCarousel />
+      {/* <Plans /> */}
       <Plans />
       <TrustedByInnovators />
 

@@ -48,3 +48,7 @@ export function AnimatedButton({
         <Button variant="ghost" className="border rounded-full">
           Start for free
         </Button>
+
+
+
+        

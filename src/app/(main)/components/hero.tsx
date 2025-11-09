@@ -7,6 +7,7 @@ import React from "react";
 
 import hero_image from "@/app/assets/hero_image.png";
 import _lee_logo from "@/app/assets/lee_logo.png";
+import { CompanyMarquee } from "@/components/animated/company-marquee";
 
 function Hero() {
   return (
@@ -44,7 +45,7 @@ function Hero() {
         </Button>
         <AnimatedButton>Get Started for Free</AnimatedButton>
       </div>
-      <div className="mt-2 flex justify-center text-muted-foreground gap-2">
+      <div className="mt-4 flex justify-center text-muted-foreground gap-2">
         <Badge variant="outline" className="px-2 py-1 border-none">
           <Verified className="mr-1 text-gray-500" />
           <p>Quick Setup</p>
@@ -69,7 +70,6 @@ function Hero() {
           />
         </div>
       </div>
-      {/* <CompanyMarquee /> */}
     </section>
   );
 }

@@ -7,7 +7,7 @@ import React from "react";
 
 function TrustedByInnovators() {
   return (
-    <section id="hero" className="my-16 mx-auto py-32">
+    <section id="hero" className="my-16 mx-auto ">
       <div className="flex flex-col items-center justify-center text-center text-purple-900">
         <Badge variant="outline" className="px-2 py-1 bg-white border-none">
           <Verified className="mr-1 text-purple-600" />
