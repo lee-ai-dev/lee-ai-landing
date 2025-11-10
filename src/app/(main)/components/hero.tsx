@@ -60,14 +60,16 @@ function Hero() {
         </Badge>
       </div>
 
-      <div className="mt-20 max-w-[800px] mx-auto mb-20 px-4 bg-linear-to-b from-transparent to-white">
+      <div className="mt-20 max-w-[800px] mx-auto mb-20 px-4">
         <div className="w-full overflow-hidden rounded-t-2xl bg-linear-to-b from-purple-200 to-purple-50 p-5">
-          <Image
-            src={hero_image}
-            alt="Hero Image"
-            objectFit="cover"
-            className="rounded-t-md"
-          />
+          <div className="">
+            <Image
+              src={hero_image}
+              alt="Hero Image"
+              style={{ objectFit: "cover" }}
+              className="rounded-t-md"
+            />
+          </div>
         </div>
       </div>
     </section>

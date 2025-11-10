@@ -16,7 +16,7 @@ export default function SalesInsightAnimation() {
     >
       {/* Image 1 - Default state */}
       <div
-        className={`transition-opacity duration-700 ease-in-out ${
+        className={`transition-opacity duration-200 ease-in-out ${
           isHovered ? "opacity-0" : "opacity-100"
         }`}
       >
@@ -29,7 +29,7 @@ export default function SalesInsightAnimation() {
 
       {/* Image 2 - Hovered state */}
       <div
-        className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+        className={`absolute inset-0 transition-opacity duration-200 ease-in-out ${
           isHovered ? "opacity-100" : "opacity-0"
         }`}
       >

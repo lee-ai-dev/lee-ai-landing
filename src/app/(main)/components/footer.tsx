@@ -52,7 +52,7 @@ function Footer() {
         </div>
         <div>
           <p className="text-end text-white text-sm my-6">
-            &copy; {new Date().getFullYear()} Lee AI. All rights reserved.
+            &copy; {new Date().getFullYear()} LEE-AI. All rights reserved.
           </p>
         </div>
       </CardContent>

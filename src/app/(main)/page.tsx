@@ -29,7 +29,7 @@ function LandingPage() {
       <Hero />
       <CompanyMarquee />
       <AutomatedFlow />
-      {/* <InsightGuide /> */}
+      <InsightGuide />
       <SeamlessIntegration />
       <StayAheadOfCompetition />
       <HowItWorks />

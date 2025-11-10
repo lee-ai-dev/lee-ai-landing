@@ -18,23 +18,20 @@ const companies = [
   { src: logo5, name: "Logoipsum Star", alt: "Logoipsum Star" },
 ];
 
-interface CompanyMarqueeProps {
-  className?: string;
-}
-
-export function CompanyMarquee({ className }: CompanyMarqueeProps) {
+export function CompanyMarquee() {
   return (
     <Marquee className="w-full">
       {companies.map((company, index) => (
         <div
           key={`${company.name}-1-${index}`}
-          className="flex items-center justify-center opacity-60 transition-opacity hover:opacity-100"
+          className="flex items-center justify-center opacity-80 transition-opacity hover:opacity-100"
         >
           <Image
             src={company.src}
             alt={company.alt}
-            height={50}
-            className="h-24 w-auto mx-10"
+            height={1000}
+            width={1000}
+            className="h-24 w-auto mx-20"
           />
         </div>
       ))}
