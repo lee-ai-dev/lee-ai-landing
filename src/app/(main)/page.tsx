@@ -35,7 +35,6 @@ function LandingPage() {
       <HowItWorks />
       <ForDevelopers />
       <ReviewCarousel />
-      {/* <Plans /> */}
       <Plans />
       <TrustedByInnovators />
 

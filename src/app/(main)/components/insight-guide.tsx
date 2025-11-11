@@ -2,18 +2,26 @@ import { AnimatedButton } from "@/components/animated/animated-button";
 import SalesInsightAnimation from "@/components/animated/sales-insight-animation";
 import { Badge } from "@/components/ui/badge";
 import { MousePointer } from "lucide-react";
+import Image from "next/image";
 import React from "react";
+
+import sales_insight from "@/app/assets/sales-insight-1.svg";
 
 function InsightGuide() {
   return (
     <section className="flex gap-20 max-w-[1200px] w- mx-auto my-16 p-8">
       <div>
-        <SalesInsightAnimation />
+        {/* <SalesInsightAnimation /> */}
+        <Image
+          src={sales_insight}
+          alt="Sales Insight Dashboard View 2"
+          className="w-full"
+        />
       </div>
       <div>
-        <Badge variant="outline" className="flex gap-2">
-          <MousePointer className="text-purple-700" />
-          <p className="text-purple-600">Insight Guide</p>
+        <Badge variant="outline">
+          <MousePointer />
+          <p>Insight Guide</p>
         </Badge>
 
         <div className="mt-8 flex flex-col gap-4">

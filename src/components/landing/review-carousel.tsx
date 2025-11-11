@@ -53,7 +53,7 @@ export function ReviewCarousel() {
     <section className="max-w-[1000px] mx-auto p-8 flex flex-col gap-4">
       <div className="text-center">
         <Badge className="mx-auto" variant="outline">
-          <Star className="mr-1 h-4 w-4 text-yellow-500" />
+          <Star />
           Trusted by Innovators Worldwide
         </Badge>
       </div>

@@ -8,8 +8,8 @@ function SeamlessIntegration() {
   return (
     <section className="items-center gap-20 grid grid-cols-2 max-w-[1200px] mx-auto my-16 p-8">
       <div className="flex flex-col  items-start justify-center">
-        <Badge variant="outline" className="flex items-center gap-2">
-          <Link className="w-4 h-4 text-blue-500 animate-pulse" />
+        <Badge variant="outline">
+          <Link className="animate-pulse" />
           <p>Seamless Integration</p>
         </Badge>
 

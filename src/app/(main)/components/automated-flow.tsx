@@ -9,7 +9,7 @@ function AutomatedFlow() {
     <section className="items-center gap-20 grid grid-cols-2 max-w-[1200px] mx-auto my-16 p-8">
       <div id="left" className="">
         <Badge variant="outline">
-          <Rocket className="mr-1 text-purple-600" />
+          <Rocket />
           Automated Flow
         </Badge>
 

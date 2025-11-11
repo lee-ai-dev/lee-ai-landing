@@ -9,9 +9,9 @@ function TrustedByInnovators() {
   return (
     <section id="hero" className="my-16 mx-auto ">
       <div className="flex flex-col items-center justify-center text-center text-purple-900">
-        <Badge variant="outline" className="px-2 py-1 bg-white border-none">
-          <Verified className="mr-1 text-purple-600" />
-          <p className="text-purple-600">Trusted By Innovators Worldwide</p>
+        <Badge variant="outline" className="bg-white border-none">
+          <Verified />
+          <p>Trusted By Innovators Worldwide</p>
         </Badge>
         <div className="mt-4 flex flex-col gap-4 items-center justify-center text-center">
           <p className="text-5xl">Ready to run a smart business?</p>

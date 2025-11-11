@@ -64,9 +64,9 @@ export default function Plans() {
         <div className="mb-16 text-center">
           <Badge
             variant="outline"
-            className="mb-6 border-none bg-purple- text-sm text-purple-500"
+            className="mb-6 border-none"
           >
-            <CircleDollarSign className="h-3 w-3" />
+            <CircleDollarSign />
             Transparent Pricing
           </Badge>
 

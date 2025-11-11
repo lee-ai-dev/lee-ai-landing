@@ -31,9 +31,9 @@ function ForDevelopers() {
               {/* Badge */}
               <Badge
                 variant="outline"
-                className="mb-6 w-fit border-purple-300 bg-white/50 text-purple-700"
+                className="mb-6 w-fit border-purple-300"
               >
-                <Code className="h-3 w-3" />
+                <Code />
                 For developers & integrators
               </Badge>
 

@@ -3,11 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Lock, ShieldCheckIcon, Verified } from "lucide-react";
 import Image from "next/image";
-import React from "react";
-
 import hero_image from "@/app/assets/hero_image.png";
 import _lee_logo from "@/app/assets/lee_logo.png";
-import { CompanyMarquee } from "@/components/animated/company-marquee";
 
 function Hero() {
   return (
@@ -46,16 +43,16 @@ function Hero() {
         <AnimatedButton>Get Started for Free</AnimatedButton>
       </div>
       <div className="mt-4 flex justify-center text-muted-foreground gap-2">
-        <Badge variant="outline" className="px-2 py-1 border-none">
-          <Verified className="mr-1 text-gray-500" />
+        <Badge variant="outline" className="border-none">
+          <Verified />
           <p>Quick Setup</p>
         </Badge>
-        <Badge variant="outline" className="px-2 py-1 border-none">
-          <Lock className="mr-1 text-gray-500" />
+        <Badge variant="outline" className="border-none">
+          <Lock />
           <p>GDPR-Compliant</p>
         </Badge>
-        <Badge variant="outline" className="px-2 py-1 border-none">
-          <ShieldCheckIcon className="mr-1 text-gray-500" />
+        <Badge variant="outline" className="border-none">
+          <ShieldCheckIcon />
           <p>Secure Payments</p>
         </Badge>
       </div>
@@ -63,12 +60,7 @@ function Hero() {
       <div className="mt-20 max-w-[800px] mx-auto mb-20 px-4">
         <div className="w-full overflow-hidden rounded-t-2xl bg-linear-to-b from-purple-200 to-purple-50 p-5">
           <div className="">
-            <Image
-              src={hero_image}
-              alt="Hero Image"
-              style={{ objectFit: "cover" }}
-              className="rounded-t-md"
-            />
+            <Image src={hero_image} alt="Hero Image" className="rounded-md" />
           </div>
         </div>
       </div>

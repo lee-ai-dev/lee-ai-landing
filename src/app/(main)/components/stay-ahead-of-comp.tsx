@@ -42,8 +42,8 @@ function StayAheadOfCompetition() {
         <div className="mx-auto max-w-[1000px]">
           {/* Badge */}
           <div className="mb-6 flex justify-center">
-            <Badge variant="outline" className="border-none  text-purple-400">
-              <Sparkles className="h-3 w-3" />
+            <Badge variant="outline" className="border-none">
+              <Sparkles />
               Stay ahead of competitors
             </Badge>
           </div>

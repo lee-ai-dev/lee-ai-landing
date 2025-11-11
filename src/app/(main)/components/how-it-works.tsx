@@ -21,9 +21,9 @@ function HowItWorks() {
         {/* Badge */}
         <Badge
           variant="outline"
-          className="mb-6 border-purple-300 bg-white/50 text-purple-700"
+          className="mb-6 border-purple-300"
         >
-          <PenToolIcon className="mr-1 h-4 w-4" />
+          <PenToolIcon />
           How it works
         </Badge>
 
