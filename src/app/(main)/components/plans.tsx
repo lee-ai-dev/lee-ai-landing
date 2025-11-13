@@ -59,51 +59,51 @@ export default function Plans() {
       }}
       className="bg-[#271F36]"
     >
-      <section className="relative mx-auto max-w-[1200px] px-4 py-20">
+      <section className="relative mx-auto max-w-[1200px] px-4 md:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         {/* Header */}
-        <div className="mb-16 text-center">
+        <div className="mb-12 md:mb-16 text-center">
           <Badge
             variant="outline"
-            className="mb-6 border-none"
+            className="mb-6 border-none text-xs md:text-sm"
           >
-            <CircleDollarSign />
+            <CircleDollarSign className="w-4 h-4" />
             Transparent Pricing
           </Badge>
 
-          <p className="mb-4 text-4xl text-white md:text-5xl lg:text-6xl">
+          <p className="mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white">
             Flexible Plans for All
           </p>
 
-          <p className="text-lg text-white/70">
+          <p className="text-sm md:text-base lg:text-lg text-white/70">
             Choose a plan that fits your goals and scale as you grow
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-0 md:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 md:gap-0 md:grid-cols-3">
           {pricingPlans.map((plan) => (
             <div
               key={plan.name}
-              className={`flex flex-col p-8 ${
+              className={`flex flex-col p-6 md:p-8 ${
                 plan.highlighted
                   ? "rounded-3xl border-2 border-purple-400/50 bg-white/10"
-                  : "rounded-3xl bg-white/5 mx-2"
+                  : "rounded-3xl bg-white/5 md:mx-2"
               }`}
             >
               {/* Header */}
-              <div className="mb-8 text-center">
-                <h3 className="mb-2 text-2xl font-bold text-white">
+              <div className="mb-6 md:mb-8 text-center">
+                <h3 className="mb-2 text-xl md:text-2xl font-bold text-white">
                   {plan.name}
                 </h3>
-                <p className="text-xl text-white/90">{plan.price}</p>
+                <p className="text-lg md:text-xl text-white/90">{plan.price}</p>
               </div>
 
               {/* Features */}
-              <div className="flex-1 space-y-6">
+              <div className="flex-1 space-y-4 md:space-y-6">
                 {plan.features.map((feature, featureIndex) => (
                   <p
                     key={featureIndex}
-                    className="text-center text-sm text-white/80"
+                    className="text-center text-xs md:text-sm text-white/80"
                   >
                     {feature}
                   </p>
@@ -111,7 +111,7 @@ export default function Plans() {
               </div>
 
               {/* CTA Button or Empty Space */}
-              <div className="mt-8 flex justify-center">
+              <div className="mt-6 md:mt-8 flex justify-center">
                 {plan.hasButton ? (
                   <AnimatedButton className="w-fit">Get Started</AnimatedButton>
                 ) : (

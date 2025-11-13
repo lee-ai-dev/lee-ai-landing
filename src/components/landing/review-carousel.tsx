@@ -50,7 +50,7 @@ const testimonials: Testimonial[] = [
 
 export function ReviewCarousel() {
   return (
-    <section className="max-w-[1000px] mx-auto p-8 flex flex-col gap-4">
+    <section className="max-w-[1000px] mx-auto p-4 md:p-6 lg:p-8 flex flex-col gap-4">
       <div className="text-center">
         <Badge className="mx-auto" variant="outline">
           <Star />
@@ -59,39 +59,41 @@ export function ReviewCarousel() {
       </div>
 
       <div className="text-center">
-        <p className="text-5xl">What our users are saying</p>
-        <p className="my-1">
+        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+          What our users are saying
+        </p>
+        <p className="my-1 text-sm md:text-base">
           Hear from businesses who've transformed their workflows with our
           solutions
         </p>
       </div>
 
-      <Carousel className="mx-auto mt-12 w-full">
+      <Carousel className="mx-auto mt-8 md:mt-12 w-full">
         <CarouselContent>
           {testimonials.map((testimonial) => (
             <CarouselItem key={testimonial.id} className="flex items-center">
-              <div className="grid grid-cols-2 items-center justify-between">
-                <div className="text-2xl">
+              <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-6 lg:gap-8">
+                <div className="text-base md:text-lg lg:text-xl xl:text-2xl order-2 lg:order-1">
                   {/* logo ipsum */}
                   <Image
                     src={_logo_ipsum}
                     alt={testimonial.attribution}
-                    width={150}
-                    height={200}
+                    width={120}
+                    height={160}
                     className="pb-2"
                   />
                   <p className="font-medium">{testimonial.quote}</p>
-                  <footer className="text-muted-foreground text-sm pt-12">
+                  <footer className="text-muted-foreground text-sm pt-6 md:pt-8 lg:pt-12">
                     {testimonial.attribution}
                   </footer>
                 </div>
-                <div className="">
+                <div className="order-1 lg:order-2">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.attribution}
                     width={300}
                     height={100}
-                    className="mx-auto"
+                    className="mx-auto max-w-full h-auto"
                   />
                 </div>
               </div>
@@ -99,8 +101,8 @@ export function ReviewCarousel() {
           ))}
         </CarouselContent>
         {/* buttons */}
-        <CarouselPrevious className="right-112 bottom-0 top-auto -translate-y-1/2 left-auto rounded-md" />
-        <CarouselNext className="right-100 bottom-0 top-auto -translate-y-1/2 rounded-md" />{" "}
+        <CarouselPrevious className="hidden md:flex right-24 lg:right-28 bottom-0 top-auto -translate-y-1/2 left-auto rounded-md" />
+        <CarouselNext className="hidden md:flex right-12 lg:right-16 bottom-0 top-auto -translate-y-1/2 rounded-md" />{" "}
       </Carousel>
     </section>
   );

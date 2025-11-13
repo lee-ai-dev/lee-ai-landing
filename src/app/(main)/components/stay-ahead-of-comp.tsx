@@ -38,43 +38,43 @@ function StayAheadOfCompetition() {
       }}
       className="bg-[#271F36]"
     >
-      <section className="relative w-full overflow-hidden py-30 px-4">
+      <section className="relative w-full overflow-hidden py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
         <div className="mx-auto max-w-[1000px]">
           {/* Badge */}
           <div className="mb-6 flex justify-center">
-            <Badge variant="outline" className="border-none">
-              <Sparkles />
+            <Badge variant="outline" className="border-none text-xs md:text-sm">
+              <Sparkles className="w-4 h-4" />
               Stay ahead of competitors
             </Badge>
           </div>
 
           {/* Heading */}
-          <p className="flex flex-col mb-16 text-center text-4xl text-white md:text-5xl lg:text-6xl">
+          <p className="flex flex-col mb-12 md:mb-16 text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white">
             <span>Why Restaurant Owners Like</span>{" "}
             <span> You Love Lee AI</span>
           </p>
 
           {/* Feature Cards Grid */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-3">
             {features.map((feature) => {
               const Icon = feature.icon;
               return (
                 <div
                   key={feature.title}
-                  className="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-8 backdrop-blur-sm"
+                  className="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-6 md:p-8 backdrop-blur-sm"
                 >
                   {/* Icon Container */}
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#9988FD]">
-                    <Icon className="h-7 w-7 text-white" />
+                  <div className="mb-4 md:mb-6 flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-xl bg-[#9988FD]">
+                    <Icon className="h-6 w-6 md:h-7 md:w-7 text-white" />
                   </div>
 
                   {/* Title */}
-                  <p className="mb-3 text-2xl font-semibold text-white">
+                  <p className="mb-3 text-lg md:text-xl lg:text-2xl font-semibold text-white">
                     {feature.title}
                   </p>
 
                   {/* Description */}
-                  <p className="text-base leading-relaxed text-white/70">
+                  <p className="text-sm md:text-base leading-relaxed text-white/70">
                     {feature.description}
                   </p>
                 </div>

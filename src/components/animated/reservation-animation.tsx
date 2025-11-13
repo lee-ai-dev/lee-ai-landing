@@ -97,53 +97,53 @@ export default function ReservationAnimation() {
           />
         </div>
 
-        {/* Chat Messages Overlay - positioned to pop out */}
-        {/* Message 1 - User (Top Right) - 35% on image, 65% pops out right */}
+        {/* Chat Messages Overlay - responsive positioning */}
+        {/* Message 1 - User (Top Right) */}
         <div
           className={cn(
-            "absolute right-[-130px] top-12 w-fit transform rounded-lg bg-white px-3 py-2 shadow-xl transition-all duration-500 ease-out",
+            "absolute right-[-20px] md:right-[-80px] lg:right-[-130px] top-8 md:top-12 w-fit max-w-[150px] md:max-w-none transform rounded-lg bg-white px-2 md:px-3 py-1.5 md:py-2 shadow-xl transition-all duration-500 ease-out",
             visibleMessages >= 1
               ? "translate-y-0 opacity-100"
               : "-translate-y-4 opacity-0"
           )}
         >
-          <p className="text-xs text-gray-800">{messages[0].text}</p>
+          <p className="text-[10px] md:text-xs text-gray-800">{messages[0].text}</p>
         </div>
 
-        {/* Message 2 - Bot (Left) - 35% on image, 65% pops out left */}
+        {/* Message 2 - Bot (Left) */}
         <div
           className={cn(
-            "absolute left-[150px] top-22 w-[250px] transform rounded-lg bg-gradient-to-r from-purple-500 to-purple-600 px-3 py-2 shadow-xl transition-all duration-500 ease-out",
+            "absolute left-[20px] md:left-[80px] lg:left-[150px] top-16 md:top-22 w-[150px] md:w-[200px] lg:w-[250px] transform rounded-lg bg-purple-500 px-2 md:px-3 py-1.5 md:py-2 shadow-xl transition-all duration-500 ease-out",
             visibleMessages >= 2
               ? "translate-y-0 opacity-100"
               : "-translate-y-4 opacity-0"
           )}
         >
-          <p className="text-xs text-white">{messages[1].text}</p>
+          <p className="text-[10px] md:text-xs text-white">{messages[1].text}</p>
         </div>
 
-        {/* Message 3 - User (Right) - 35% on image, 65% pops out right */}
+        {/* Message 3 - User (Right) */}
         <div
           className={cn(
-            "absolute right-[-100px] top-[150px] w-[180px] transform rounded-lg bg-white px-3 py-2 shadow-xl transition-all duration-500 ease-out",
+            "absolute right-[-20px] md:right-[-60px] lg:right-[-100px] top-[100px] md:top-[130px] lg:top-[150px] w-[120px] md:w-[150px] lg:w-[180px] transform rounded-lg bg-white px-2 md:px-3 py-1.5 md:py-2 shadow-xl transition-all duration-500 ease-out",
             visibleMessages >= 3
               ? "translate-y-0 opacity-100"
               : "-translate-y-4 opacity-0"
           )}
         >
-          <p className="text-xs text-gray-800">{messages[2].text}</p>
+          <p className="text-[10px] md:text-xs text-gray-800">{messages[2].text}</p>
         </div>
 
-        {/* Message 4 - Bot (Left, bottom with checkmark) - 35% on image, 65% pops out left */}
+        {/* Message 4 - Bot (Left, bottom with checkmark) */}
         <div
           className={cn(
-            "absolute bottom-15 left-[150px] flex w-[260px] transform items-start gap-1 rounded-lg bg-gradient-to-r from-purple-500 to-purple-600 px-3 py-2 shadow-xl transition-all duration-500 ease-out",
+            "absolute bottom-10 md:bottom-15 left-[20px] md:left-[80px] lg:left-[150px] flex w-[160px] md:w-[220px] lg:w-[260px] transform items-start gap-1 rounded-lg bg-gradient-to-r from-purple-500 to-purple-600 px-2 md:px-3 py-1.5 md:py-2 shadow-xl transition-all duration-500 ease-out",
             visibleMessages >= 4
               ? "translate-y-0 opacity-100"
               : "-translate-y-4 opacity-0"
           )}
         >
-          <p className="text-xs text-white">{messages[3].text}</p>
+          <p className="text-[10px] md:text-xs text-white">{messages[3].text}</p>
         </div>
       </div>
     </div>

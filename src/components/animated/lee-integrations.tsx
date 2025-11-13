@@ -46,15 +46,15 @@ function IntegrationIcon({ icon, name }: { icon: any; name: string }) {
 
 function LeeIntegrations() {
   return (
-    <div className="relative w-full h-[300px] flex items-center justify-center overflow-hidden">
+    <div className="relative w-full h-[200px] md:h-[250px] lg:h-[300px] flex items-center justify-center overflow-hidden">
       {/* Purple blur background */}
       <div className="absolute inset-0 flex items-center justify-center z-0">
-        <div className="w-[400px] h-[250px] bg-linear-to-br from-purple-400/40 to-purple-500/40 rounded-full blur-3xl" />
+        <div className="w-[250px] h-[150px] md:w-[350px] md:h-[200px] lg:w-[400px] lg:h-[250px] bg-linear-to-br from-purple-400/40 to-purple-500/40 rounded-full blur-3xl" />
       </div>
 
       {/* Brand icons with blurry edges - 3 rows */}
       <div
-        className="absolute inset-0 z-10 flex flex-col justify-center gap-4"
+        className="absolute inset-0 z-10 flex flex-col justify-center gap-2 md:gap-3 lg:gap-4"
         style={{
           maskImage:
             "linear-gradient(to right, transparent, black 10%, white 60%, transparent)",
@@ -104,7 +104,7 @@ function LeeIntegrations() {
             alt="Lee AI Logo"
             width={100}
             height={100}
-            className="w-16 h-16 object-contain"
+            className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain"
             quality={100}
             priority
           />

@@ -31,7 +31,7 @@ export function CompanyMarquee() {
             alt={company.alt}
             height={1000}
             width={1000}
-            className="h-24 w-auto mx-20"
+            className="h-12 md:h-16 lg:h-20 xl:h-24 w-auto mx-8 md:mx-12 lg:mx-16 xl:mx-20"
           />
         </div>
       ))}
