@@ -33,8 +33,8 @@ function StayAheadOfCompetition() {
         first: "39, 31, 54",
         third: "60, 70, 80",
         fourth: "90, 100, 110",
-        // fifth: "120, 130, 140",
-        // sixth: "150, 160, 170",
+        fifth: "",
+        sixth: "",
       }}
       className="bg-[#271F36]"
     >

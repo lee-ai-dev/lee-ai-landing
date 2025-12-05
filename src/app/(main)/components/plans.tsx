@@ -56,6 +56,8 @@ export default function Plans() {
         first: "39, 31, 54",
         third: "60, 70, 80",
         fourth: "90, 100, 110",
+        fifth: "",
+        sixth: "",
       }}
       className="bg-[#271F36]"
     >
