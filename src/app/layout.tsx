@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const font = localFont({
   src: [
@@ -66,7 +67,10 @@ export default function RootLayout({
           content="https://metatags.io/images/meta-tags.png"
         />
       </head>
-      <body className={`${font.variable} antialiased`}>{children}</body>
+      <body className={`${font.variable} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
