@@ -23,6 +23,9 @@ const font = localFont({
 export const metadata: Metadata = {
   title: "Lee AI",
   description: "Automate Orders, Reservations and Replies, All in One Place.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 const site_data = {
