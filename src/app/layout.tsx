@@ -25,6 +25,15 @@ export const metadata: Metadata = {
   description: "Automate Orders, Reservations and Replies, All in One Place.",
 };
 
+const site_data = {
+  name: "Lee AI",
+  url: "https://trylee.io",
+  description:
+    "Automate Orders Reservations and Replies, All in One Place - Lee AI handles every part of your customer experience. It saves you hours of manual work and ensures your restaurant never misses a moment to serve.",
+  meta_image:
+    "https://res.cloudinary.com/dvhhe516r/image/upload/v1765540447/lee-meta-image_auf26c.png",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,7 +42,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <!-- Primary Meta Tags --> */}
         <title>Lee AI</title>
         <meta name="title" content="Lee AI" />
         <meta
@@ -43,29 +51,17 @@ export default function RootLayout({
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://leeai.io" />
-        <meta property="og:title" content="Lee AI" />
-        <meta
-          property="og:description"
-          content="Automate Orders Reservations and Replies, All in One Place - Lee AI handles every part of your customer experience. It saves you hours of manual work and ensures your restaurant never misses a moment to serve."
-        />
-        <meta
-          property="og:image"
-          content="https://metatags.io/images/meta-tags.png"
-        />
+        <meta property="og:url" content={site_data.url} />
+        <meta property="og:title" content={site_data.name} />
+        <meta property="og:description" content={site_data.description} />
+        <meta property="og:image" content={site_data.meta_image} />
 
         {/* <!-- X (Twitter) --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://leeai.io" />
-        <meta property="twitter:title" content="Lee AI" />
-        <meta
-          property="twitter:description"
-          content="Automate Orders Reservations and Replies, All in One Place - Lee AI handles every part of your customer experience. It saves you hours of manual work and ensures your restaurant never misses a moment to serve."
-        />
-        <meta
-          property="twitter:image"
-          content="https://metatags.io/images/meta-tags.png"
-        />
+        <meta property="twitter:url" content={site_data.url} />
+        <meta property="twitter:title" content={site_data.name} />
+        <meta property="twitter:description" content={site_data.description} />
+        <meta property="twitter:image" content={site_data.meta_image} />
       </head>
       <body className={`${font.variable} antialiased`}>
         {children}
