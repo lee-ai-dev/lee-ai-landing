@@ -1,21 +1,38 @@
+"use client";
+
 import { AnimatedButton } from "@/components/animated/animated-button";
 import SalesInsightAnimation from "@/components/animated/sales-insight-animation";
 import { Badge } from "@/components/ui/badge";
 import { MousePointer } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 import sales_insight from "@/app/assets/sales-insight-1.svg";
+import sales_insight_2 from "@/app/assets/sales-insight-2.svg";
 
 function InsightGuide() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <section className="flex flex-col-reverse md:flex-col lg:flex-row gap-8 md:gap-12 lg:gap-20 max-w-[1200px] mx-auto my-8 md:my-12 lg:my-16 p-4 md:p-6 lg:p-8">
-      <div className="w-full lg:w-1/2">
+      <div
+        className="w-full lg:w-1/2 relative"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         {/* <SalesInsightAnimation /> */}
         <Image
           src={sales_insight}
+          alt="Sales Insight Dashboard View 1"
+          className={`w-full transition-all duration-500 ease-in-out ${
+            isHovered ? "opacity-0" : "opacity-100"
+          }`}
+        />
+        <Image
+          src={sales_insight_2}
           alt="Sales Insight Dashboard View 2"
-          className="w-full"
+          className={`w-full absolute inset-0 transition-all duration-500 ease-in-out ${
+            isHovered ? "opacity-100" : "opacity-0"
+          }`}
         />
       </div>
       <div className="w-full lg:w-1/2">
